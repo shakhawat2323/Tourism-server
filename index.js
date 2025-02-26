@@ -1,5 +1,6 @@
 const express = require("express");
 require("dotenv").config();
+j;
 const cors = require("cors");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const app = express();
@@ -8,10 +9,11 @@ let jwt = require("jsonwebtoken");
 
 app.use(express.json());
 app.use(cors());
+// turijamonaaaaa423423
 
-const uri =
-  "mongodb+srv://turijamonaaaaa423423:AFCAvcAqNXtXb64p@cluster0.uvwcv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
+// AFCAvcAqNXtXb64p
+const uri = `mongodb+srv://turijamonaaaaa423423:AFCAvcAqNXtXb64p@cluster0.uvwcv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+console.log(uri);
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
